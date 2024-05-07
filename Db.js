@@ -1,8 +1,7 @@
 const mongoose = require('mongoose');
 
 // // Connection URI
-// const uri = 'mongodb+srv://Abhishek:Abhi8898@cluster0.ddqlz.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0';
-// const uri='mongodb+srv://Abhishek:Abhi8898@cluster0.ddqlz.mongodb.net/'
+
  const uri ='mongodb+srv://Abhishek:Abhi8898@cluster0.ddqlz.mongodb.net/?retryWrites=true&w=majority&appName=SocialX'
 
 // Connect to MongoDB
