@@ -36,7 +36,7 @@ router.post("/SignUp", uploader.single('file') ,async(req, res) => {
 
         
         const user = new User({ firstname, lastname, email, password, imageUrl: upload.secure_url });
-        await user.save();
+        await user.save({ wtimeout: 20000 });
 
         res.status(200).json({ message: 'User registered successfully', data: user });
 
