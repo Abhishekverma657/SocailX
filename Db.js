@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 // Connection URI
-const uri = 'mongodb://127.0.0.1:27017/SocialX';
+const uri = 'mongodb+srv://Abhishek:Abhi8898@cluster0.ddqlz.mongodb.net/?retryWrites=true&w=majority&appName=SocialX';
 
 // Connect to MongoDB
  mongoose.connect(uri, { 
