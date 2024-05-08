@@ -3,16 +3,15 @@ const mongoose = require('mongoose');
  
  
 
- const uri ='mongodb+srv://Abhishek:Abhi8898@cluster0.ddqlz.mongodb.net/SocialX'
+ const uri ='mongodb+srv://Abhishek:Abhi8898@cluster0.ddqlz.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0'
  
  
  
 
 // Connect to MongoDB
- mongoose.connect(uri, { 
-  connectTimeoutMS :20000
-    
-})
+ mongoose.connect(uri,
+
+  )
   .then(() => {
     console.log('Connected to MongoDB');
     // Perform operations using mongoose
