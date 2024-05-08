@@ -35,7 +35,7 @@ router.post("/SignUp", uploader.single('file') ,async(req, res) => {
         const upload =await  Upload.uploadfile(req.file.path);
 
         
-        const user = new User.create({ firstname, lastname, email, password, imageUrl: upload.secure_url });
+        const user = new User({ firstname, lastname, email, password, imageUrl: upload.secure_url });
         await user.save();
 
         res.status(200).json({ message: 'User registered successfully', data: user });
