@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
  
  
 
- const uri ='mongodb+srv://Abhishek:Abhi8898@cluster0.ddqlz.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0'
+ const uri ='mongodb+srv://Abhishek:Abhi8898@cluster0.ddqlz.mongodb.net/SocialX?retryWrites=true&w=majority&appName=Cluster0'
  
  
  
